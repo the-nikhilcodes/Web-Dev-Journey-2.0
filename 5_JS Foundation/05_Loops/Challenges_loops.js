@@ -57,3 +57,37 @@ for (const city in citipopulations) {
   }
   largeCities[city] = citipopulations[city];
 }
+
+console.log(largeCities);
+
+// Expected Output:
+// { london: 8900000, berlin: 3769000, madrid: 3223000 }
+
+let teaCollection = ["earl grey", "green tea", "chai", "oolong tea"];
+let availableTeas = [];
+teaCollection.forEach(function (tea) {
+  if (tea === "chai") {
+    return;
+  }
+  availableTeas.push(tea);
+});
+
+console.log(availableTeas);
+
+// Expected Output:
+// [ 'earl grey', 'green tea', 'oolong tea' ]
+
+let myNumbers = [10, 20, 30, 40, 50, 60];
+let limitedNumbers = [];
+
+for (let i = 0; i < myNumbers.length; i++) {
+  if (myNumbers[i] > 40) {
+    continue;
+  } 
+doubleNumbers.push(myNumbers[i] * 2);
+}
+
+console.log(limitedNumbers);
+
+// Expected Output:
+// [ 20, 40, 60, 80 ]
